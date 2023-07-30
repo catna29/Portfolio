@@ -1,0 +1,118 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Borel&family=Lunasima&family=Noto+Sans&family=Roboto+Mono&display=swap'); /* font-family: 'Borel', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); /* font-family: 'Roboto Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab&display=swap');/*font-family: 'Lilita One', cursive; */
+
+:root{
+    --pink: #ff89bf;
+    --lightpink: #fec3df;
+    --yellow:#ffeea8;
+    --sky:#72f0ec;
+    --lightsky:#a0f3ed;
+    --purple:#9fa3e3;
+    --lightpurple:#BDC0F7;
+    --black: black;
+    --white: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    color: var(--black) ;
+}
+
+/*global tag*/
+h1{
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+span{
+    font-size: 9rem;
+    color: var(--pink);
+}
+
+h6{
+    font-size: 1.1rem;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    align-items: center;
+}
+
+nav img {
+    width: 70px;
+    cursor: pointer;
+}
+
+
+nav .nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+nav .nav-bar ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .nav-bar ul li a{
+    text-decoration: none;
+    color: var(--pink);
+    transition: 0.3s;
+}
+
+nav .nav-bar ul li a:hover,
+nav .nav-bar ul li a.active{
+    color: var(--white);
+    background: var(--lightpink);
+    padding: 9px 9px;
+    border-radius: 10px 10px;
+}
+
+
+
+
+
+
+.btn .sky{
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 15px 15px;
+    background:var(--sky);
+    color: white;
+}
+
+.btn .sky:hover{
+    background:var(--purple);
+    color: white;
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(odd){
+    background: var(--lightpink);   
+}
