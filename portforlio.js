@@ -73,7 +73,7 @@ function myFunction() {
 
 let id_Lists = ["home", "about", "skills", "product"]
 let id_List = id_Lists.forEach( (id) => { document.getElementById("id")});
-
+*/
 
 
 //this is you can do by length hight 
@@ -95,4 +95,4 @@ function myFunction() {
   }
 }
 
-*/
+
