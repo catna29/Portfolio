@@ -95,4 +95,20 @@ function myFunction() {
   }
 }
 
+//start home parallax for text moving when you scroll and opacity is more light//
 
+var headerBg = document.getElementById('bg')
+window.addEventListener('scroll', function() {
+  headerBg.style.opacity= 1 - window.scrollY/300 
+ })
+
+ var headerBg_img = document.getElementById('bg-img')
+window.addEventListener('scroll', function() {
+  headerBg_img.style.opacity= 1 - window.scrollY/400
+ })
+
+// Nav bar close and open after responsive screen size
+/*$('#menu-icon').click(function () {
+  $('.nav').addClass('open')
+});
+*/
